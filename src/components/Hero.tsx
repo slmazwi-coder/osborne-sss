@@ -3,14 +3,11 @@ import { AnimatePresence, motion } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
-  { url: './assets/hero/FB_IMG_1780366553318.jpg', caption: 'Academic excellence' },
-  { url: './assets/hero/FB_IMG_1780366561000.jpg', caption: 'The Sky Is The Limit' },
-  { url: './assets/hero/FB_IMG_1780366568826.jpg', caption: 'Let there be light' },
-  { url: './assets/hero/FB_IMG_1780366605285.jpg', caption: 'Our learners, our pride' },
-  { url: './assets/hero/FB_IMG_1780366637639.jpg', caption: 'Tie ceremony traditions' },
-  { url: './assets/hero/osbornhero1.jpg', caption: 'Discipline and hard work' },
-  { url: './assets/hero/osbornhero2.jpg', caption: 'The spirit of Osborn SSS' },
-  { url: './assets/hero/osbornhero3.jpg', caption: 'Together we rise' },
+  { url: './assets/hero/FB_IMG_1780366553318.jpg', caption: 'Let There Be Light' },
+  { url: './assets/hero/FB_IMG_1780366561000.jpg', caption: 'Academic Excellence' },
+  { url: './assets/hero/FB_IMG_1780366568826.jpg', caption: '92.9% Pass Rate 2025' },
+  { url: './assets/hero/FB_IMG_1780366605285.jpg', caption: 'National Recognition' },
+  { url: './assets/hero/FB_IMG_1780366637639.jpg', caption: 'Established 2022' },
 ];
 
 export const Hero = () => {
@@ -47,7 +44,7 @@ export const Hero = () => {
           />
           {/* Gradient overlay */}
           <div className="absolute inset-0"
-            style={ { background: 'linear-gradient(to top, rgba(204,0,0,0.92) 0%, rgba(204,0,0,0.55) 45%, rgba(0,0,0,0.35) 100%)' } } />
+            style={ { background: 'linear-gradient(to top, rgba(27,77,46,0.95) 0%, rgba(27,77,46,0.55) 45%, rgba(0,0,0,0.35) 100%)' } } />
         </motion.div>
       </AnimatePresence>
 
@@ -61,7 +58,7 @@ export const Hero = () => {
             exit={ { opacity: 0, y: -8 } }
             transition={ { duration: 0.35 } }
             className="text-base md:text-lg font-medium tracking-widest uppercase"
-            style={ { color: 'rgba(245,197,24,0.85)' } }
+            style={ { color: 'rgba(201,168,76,0.85)' } }
           >
             {slide.caption}
           </motion.p>
@@ -78,7 +75,7 @@ export const Hero = () => {
           className="mb-5"
         >
           <img
-            src="./osborn_logo.png"
+            src="./assets/logo/FB_IMG_1780366540732.jpg"
             alt="Osborn SSS crest"
             className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover shadow-2xl mx-auto"
             style={ { border: '3px solid #C9A84C' } }
@@ -101,7 +98,7 @@ export const Hero = () => {
           animate={ { opacity: 1, y: 0 } }
           transition={ { duration: 0.5, delay: 0.18 } }
           className="text-base md:text-xl font-light italic mb-8"
-          style={ { color: 'rgba(245,197,24,0.8)' } }
+          style={ { color: 'rgba(201,168,76,0.8)' } }
         >
           "Let There Be Light"
         </motion.p>
@@ -131,7 +128,7 @@ export const Hero = () => {
       <button
         onClick={prev}
         className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full z-20 transition-all hover:scale-110"
-        style={ { background: 'rgba(245,197,24,0.2)', color: '#C9A84C' } }
+        style={ { background: 'rgba(201,168,76,0.2)', color: '#C9A84C' } }
         aria-label="Previous"
       >
         <ChevronLeft size={32} />
@@ -139,7 +136,7 @@ export const Hero = () => {
       <button
         onClick={next}
         className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full z-20 transition-all hover:scale-110"
-        style={ { background: 'rgba(245,197,24,0.2)', color: '#C9A84C' } }
+        style={ { background: 'rgba(201,168,76,0.2)', color: '#C9A84C' } }
         aria-label="Next"
       >
         <ChevronRight size={32} />
@@ -152,7 +149,7 @@ export const Hero = () => {
             key={i}
             onClick={() => setCurrentIndex(i)}
             className="h-2 w-2 rounded-full transition-all"
-            style={ { background: i === currentIndex ? '#C9A84C' : 'rgba(245,197,24,0.3)' } }
+            style={ { background: i === currentIndex ? '#C9A84C' : 'rgba(201,168,76,0.3)' } }
           />
         ))}
       </div>
