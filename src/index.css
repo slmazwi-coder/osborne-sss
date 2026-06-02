@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-school-green: #1B4D2E;
+  --color-school-gold:  #C9A84C;
+  --color-school-cream:  #F7F3E8;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html, body, #root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-[#FDF9EC] text-[#1B4D2E];
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Nav glass — dark green background */
+.glass-nav {
+  background: #1B4D2E;
+  border-bottom: 3px solid #C9A84C;
+  @apply sticky top-0 z-50 w-full;
+}
+
+/* Primary button — gold on green */
+.btn-primary {
+  background: #1B4D2E;
+  color: #C9A84C;
+  @apply px-6 py-2 font-semibold transition-colors;
+}
+.btn-primary:hover {
+  background: #143D24;
+}
+
+/* Section title */
+.section-title {
+  @apply text-3xl font-bold mb-8 text-center;
+  color: #1B4D2E;
+}
+
+/* Card */
+.card {
+  background: #FFFBEF;
+  border: 1px solid #C9A84C;
+  @apply p-6 shadow-sm hover:shadow-md transition-shadow;
+  border-radius: 0.75rem;
+}
+
+main {
+  width: 100%;
+  flex: 1;
+}
