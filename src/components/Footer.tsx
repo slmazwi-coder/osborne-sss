@@ -10,7 +10,7 @@ export const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-3">
               <div className="h-12 w-12 shrink-0 rounded-xl overflow-hidden shadow-lg" style={ { background: '#C9A84C', border: '2px solid #C9A84C' } }>
-                <img src="/osborn_logo.png" alt="Osborn SSS logo" className="h-full w-full object-cover" />
+                <img src="/assets/logo/FB_IMG_1780366540732.jpg" alt="Osborn SSS logo" className="h-full w-full object-cover" />
               </div>
               <div>
                 <h3 className="text-base font-bold leading-tight" style={ { color: '#C9A84C' } }>

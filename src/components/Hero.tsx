@@ -3,11 +3,11 @@ import { AnimatePresence, motion } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
-  { url: './osbornhero1.jpg', caption: 'Academic excellence' },
-  { url: './osbornhero2.jpg', caption: 'The Sky Is The Limit' },
-  { url: './osbornhero3.jpg', caption: 'Let there be light' },
-  { url: './osbornhero4.jpg', caption: 'Our learners, our pride' },
-  { url: './osbornhero5.jpg', caption: 'Tie ceremony traditions' },
+  { url: './assets/hero/FB_IMG_1780366553318.jpg', caption: 'Academic excellence' },
+  { url: './assets/hero/FB_IMG_1780366561000.jpg', caption: 'The Sky Is The Limit' },
+  { url: './assets/hero/FB_IMG_1780366568826.jpg', caption: 'Let there be light' },
+  { url: './assets/hero/FB_IMG_1780366605285.jpg', caption: 'Our learners, our pride' },
+  { url: './assets/hero/FB_IMG_1780366637639.jpg', caption: 'Tie ceremony traditions' },
   { url: './assets/hero/osbornhero1.jpg', caption: 'Discipline and hard work' },
   { url: './assets/hero/osbornhero2.jpg', caption: 'The spirit of Osborn SSS' },
   { url: './assets/hero/osbornhero3.jpg', caption: 'Together we rise' },

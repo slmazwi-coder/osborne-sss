@@ -32,7 +32,7 @@ export const Navbar = () => {
             <Link to="/" className="flex items-center gap-3 min-w-0 flex-1">
               <div className="h-11 w-11 shrink-0 rounded-xl bg-white flex items-center justify-center overflow-hidden shadow-md" style={ { border: '2px solid #C9A84C' } }>
                 <img
-                  src="/osborn_logo.png"
+                  src="/assets/logo/FB_IMG_1780366540732.jpg"
                   alt="Osborn SSS logo"
                   className="h-full w-full object-cover"
                 />
